@@ -11,21 +11,24 @@ A complete 5-page English learning flashcard website called **LinguaFlash**, bui
 - Feature cards (Smart Flashcards, Study Modes, Progress Tracking)
 - Dark CTA banner and footer
 
-![Landing Page](file:///C:/Users/admin/.gemini/antigravity/brain/0d317af5-d31f-47ca-bea7-4f530db1b09d/hero_section_1772352128657.png)
+<img width="823" height="392" alt="image" src="https://github.com/user-attachments/assets/fe779ebc-e205-4b8f-a197-d0f8b913e987" />
+
 
 ### 2. Library Page ([library.html](file:///C:/Users/admin/Desktop/Stich+Gemini/queue/library.html))
 - 6 flashcard set cards with colorful icons (Academic Writing, Business English, TOEFL Prep, Daily Conversation, Travel English, Medical Terms)
 - Search bar, filter tabs (All, Recent, Favorites)
 - Progress bars and "Study Now" / "View Words" buttons
 
-![Library Page](file:///C:/Users/admin/.gemini/antigravity/brain/0d317af5-d31f-47ca-bea7-4f530db1b09d/library_page_verification_1772354480703.png)
+<img width="817" height="391" alt="image" src="https://github.com/user-attachments/assets/5c93612d-0201-4301-976d-0e589c9f331d" />
+
 
 ### 3. Create Set Page ([create.html](file:///C:/Users/admin/Desktop/Stich+Gemini/site/public/create.html))
 - Form with Set Title, Category dropdown, Description textarea
 - 5 pre-filled word pairs (Pioneer, Resilient, Eloquent, Ambiguous, Tenacious)
 - "Add Another Card" button, Save/Cancel actions
 
-![Create Page](file:///C:/Users/admin/.gemini/antigravity/brain/0d317af5-d31f-47ca-bea7-4f530db1b09d/create_page_verification_1772354488075.png)
+<img width="824" height="392" alt="image" src="https://github.com/user-attachments/assets/ea18734e-db51-4e25-8102-b983972836ff" />
+
 
 ### 4. Word List Page ([wordlist.html](file:///C:/Users/admin/Desktop/Stich+Gemini/site/public/wordlist.html))
 - Progress summary with green/yellow/gray mastery breakdown
@@ -33,7 +36,8 @@ A complete 5-page English learning flashcard website called **LinguaFlash**, bui
 - Mastery indicators (Mastered, In Progress, Not Started)
 - Pagination (Page 1 of 12)
 
-![Word List Page](file:///C:/Users/admin/.gemini/antigravity/brain/0d317af5-d31f-47ca-bea7-4f530db1b09d/wordlist_page_verification_1772354495787.png)
+![Word List Page](<img width="827" height="392" alt="image" src="https://github.com/user-attachments/assets/1d3971df-a138-4d29-b4d6-0bdedcc69181" />
+)
 
 ### 5. Study Mode ([study.html](file:///C:/Users/admin/Desktop/Stich+Gemini/site/public/study.html))
 - Interactive 3D card flip animation (click to reveal definition)
@@ -41,9 +45,11 @@ A complete 5-page English learning flashcard website called **LinguaFlash**, bui
 - Session stats, Shuffle/Auto-play/End Session controls
 
 ````carousel
-![Study - Front](file:///C:/Users/admin/.gemini/antigravity/brain/0d317af5-d31f-47ca-bea7-4f530db1b09d/study_page_verification_front_1772354513566.png)
+![Study - Front](<img width="824" height="389" alt="image" src="https://github.com/user-attachments/assets/d4980747-0256-4a8c-a5c9-5f11b53acc88" />
+)
 <!-- slide -->
-![Study - Back (Flipped)](file:///C:/Users/admin/.gemini/antigravity/brain/0d317af5-d31f-47ca-bea7-4f530db1b09d/study_page_verification_back_1772354522394.png)
+![Study - Back (Flipped)](<img width="823" height="393" alt="image" src="https://github.com/user-attachments/assets/04277ee0-23e4-4601-a5e7-eb8b56fc77bf" />
+)
 ````
 
 ## Design System
