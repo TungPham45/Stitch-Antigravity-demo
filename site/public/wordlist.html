@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>LinguaFlash - Academic Writing Word List</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2020ee",
+                        "primary-dark": "#1e1eae",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101022",
+                        "neutral-muted": "#616189",
+                        "neutral-dark": "#111118",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-neutral-dark dark:text-slate-100 min-h-screen">
+    <nav
+        class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 border-b border-primary/10 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                    <span class="material-symbols-outlined text-xl">auto_stories</span>
+                </div>
+                <a href="index.html"
+                    class="text-xl font-bold tracking-tight text-neutral-dark dark:text-white">LinguaFlash</a>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Explore</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="study.html">Study Modes</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="library.html">Library</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <div
+                    class="size-10 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary">person</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <div class="mb-8">
+            <div class="flex items-center gap-2 text-neutral-muted mb-4">
+                <span class="material-symbols-outlined text-sm">arrow_back</span>
+                <a class="text-sm font-medium hover:underline" href="library.html">Back to Library</a>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <h2 class="text-4xl font-extrabold tracking-tight mb-2">Academic Writing <span
+                            class="text-neutral-muted font-medium text-2xl">(120 cards)</span></h2>
+                    <p class="text-neutral-muted max-w-2xl">Master high-level academic vocabulary for research, formal
+                        essays, and scholarly publications.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="study.html"
+                        class="bg-primary text-white px-8 py-3 rounded-full font-bold text-sm shadow-lg shadow-primary/25 hover:scale-105 transition-transform">
+                        Study This Set
+                    </a>
+                    <button
+                        class="border border-primary/20 px-6 py-3 rounded-full font-bold text-sm hover:bg-primary/5 transition-colors">
+                        Edit Set
+                    </button>
+                    <button
+                        class="size-11 border border-primary/20 rounded-full flex items-center justify-center hover:bg-primary/5 transition-colors">
+                        <span class="material-symbols-outlined text-neutral-dark">share</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 mb-8 border border-primary/5 shadow-sm">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-neutral-muted mb-4">Set Progress</h3>
+            <div class="flex flex-col gap-4">
+                <div class="h-3 w-full bg-background-light dark:bg-slate-800 rounded-full overflow-hidden flex">
+                    <div class="h-full bg-emerald-500" style="width: 65%"></div>
+                    <div class="h-full bg-amber-400" style="width: 25%"></div>
+                    <div class="h-full bg-slate-300 dark:bg-slate-600" style="width: 10%"></div>
+                </div>
+                <div class="flex flex-wrap gap-6">
+                    <div class="flex items-center gap-2"><span class="size-3 rounded-full bg-emerald-500"></span><span
+                            class="text-sm font-semibold">Mastered (78)</span></div>
+                    <div class="flex items-center gap-2"><span class="size-3 rounded-full bg-amber-400"></span><span
+                            class="text-sm font-semibold">In Progress (30)</span></div>
+                    <div class="flex items-center gap-2"><span
+                            class="size-3 rounded-full bg-slate-300 dark:bg-slate-600"></span><span
+                            class="text-sm font-semibold">Not Started (12)</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-primary/5 overflow-hidden">
+            <div class="p-6 border-b border-primary/5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="relative max-w-md w-full">
+                    <span
+                        class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-neutral-muted">search</span>
+                    <input
+                        class="w-full pl-10 pr-4 py-2.5 bg-background-light dark:bg-slate-800 border-none rounded-xl focus:ring-2 focus:ring-primary text-sm"
+                        placeholder="Search terms or definitions..." type="text" />
+                </div>
+                <div class="flex items-center gap-2 text-sm text-neutral-muted">
+                    <span>Sort by:</span>
+                    <select
+                        class="bg-transparent border-none focus:ring-0 font-bold text-neutral-dark dark:text-white cursor-pointer py-0">
+                        <option>Alphabetical</option>
+                        <option>Recently Studied</option>
+                        <option>Mastery Level</option>
+                    </select>
+                </div>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-background-light/50 dark:bg-slate-800/50">
+                            <th
+                                class="px-6 py-4 text-xs font-bold uppercase tracking-wider text-neutral-muted w-16 text-center">
+                                #</th>
+                            <th class="px-6 py-4 text-xs font-bold uppercase tracking-wider text-neutral-muted">Term
+                            </th>
+                            <th class="px-6 py-4 text-xs font-bold uppercase tracking-wider text-neutral-muted">
+                                Definition</th>
+                            <th class="px-6 py-4 text-xs font-bold uppercase tracking-wider text-neutral-muted w-40">
+                                Mastery</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-primary/5">
+                        <tr class="hover:bg-primary/[0.02] transition-colors">
+                            <td class="px-6 py-5 text-center text-neutral-muted text-sm font-medium">1</td>
+                            <td class="px-6 py-5 font-bold text-neutral-dark dark:text-white">Hypothesis</td>
+                            <td class="px-6 py-5 text-neutral-muted text-sm leading-relaxed">A proposed explanation made
+                                on the basis of limited evidence as a starting point for further investigation.</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-2"><span
+                                        class="size-2 rounded-full bg-emerald-500"></span><span
+                                        class="text-xs font-bold text-emerald-600 uppercase">Mastered</span></div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-primary/[0.02] transition-colors">
+                            <td class="px-6 py-5 text-center text-neutral-muted text-sm font-medium">2</td>
+                            <td class="px-6 py-5 font-bold text-neutral-dark dark:text-white">Empirical</td>
+                            <td class="px-6 py-5 text-neutral-muted text-sm leading-relaxed">Based on, concerned with,
+                                or verifiable by observation or experience rather than theory or pure logic.</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-2"><span
+                                        class="size-2 rounded-full bg-emerald-500"></span><span
+                                        class="text-xs font-bold text-emerald-600 uppercase">Mastered</span></div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-primary/[0.02] transition-colors">
+                            <td class="px-6 py-5 text-center text-neutral-muted text-sm font-medium">3</td>
+                            <td class="px-6 py-5 font-bold text-neutral-dark dark:text-white">Abstract</td>
+                            <td class="px-6 py-5 text-neutral-muted text-sm leading-relaxed">Existing in thought or as
+                                an idea but not having a physical or concrete existence; a summary of a paper.</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-2"><span
+                                        class="size-2 rounded-full bg-amber-400"></span><span
+                                        class="text-xs font-bold text-amber-600 uppercase">In Progress</span></div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-primary/[0.02] transition-colors">
+                            <td class="px-6 py-5 text-center text-neutral-muted text-sm font-medium">4</td>
+                            <td class="px-6 py-5 font-bold text-neutral-dark dark:text-white">Paradigm</td>
+                            <td class="px-6 py-5 text-neutral-muted text-sm leading-relaxed">A typical example or
+                                pattern of something; a model or standard framework within a discipline.</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-2"><span
+                                        class="size-2 rounded-full bg-emerald-500"></span><span
+                                        class="text-xs font-bold text-emerald-600 uppercase">Mastered</span></div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-primary/[0.02] transition-colors">
+                            <td class="px-6 py-5 text-center text-neutral-muted text-sm font-medium">5</td>
+                            <td class="px-6 py-5 font-bold text-neutral-dark dark:text-white">Methodology</td>
+                            <td class="px-6 py-5 text-neutral-muted text-sm leading-relaxed">A system of methods used in
+                                a particular area of study or activity.</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-2"><span
+                                        class="size-2 rounded-full bg-emerald-500"></span><span
+                                        class="text-xs font-bold text-emerald-600 uppercase">Mastered</span></div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-primary/[0.02] transition-colors">
+                            <td class="px-6 py-5 text-center text-neutral-muted text-sm font-medium">6</td>
+                            <td class="px-6 py-5 font-bold text-neutral-dark dark:text-white">Synthesis</td>
+                            <td class="px-6 py-5 text-neutral-muted text-sm leading-relaxed">Combine a number of things
+                                into a coherent whole, often used for literature reviews.</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-2"><span
+                                        class="size-2 rounded-full bg-emerald-500"></span><span
+                                        class="text-xs font-bold text-emerald-600 uppercase">Mastered</span></div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-primary/[0.02] transition-colors">
+                            <td class="px-6 py-5 text-center text-neutral-muted text-sm font-medium">7</td>
+                            <td class="px-6 py-5 font-bold text-neutral-dark dark:text-white">Correlation</td>
+                            <td class="px-6 py-5 text-neutral-muted text-sm leading-relaxed">A mutual relationship or
+                                connection between two or more things.</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-2"><span
+                                        class="size-2 rounded-full bg-emerald-500"></span><span
+                                        class="text-xs font-bold text-emerald-600 uppercase">Mastered</span></div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-primary/[0.02] transition-colors">
+                            <td class="px-6 py-5 text-center text-neutral-muted text-sm font-medium">8</td>
+                            <td class="px-6 py-5 font-bold text-neutral-dark dark:text-white">Phenomenon</td>
+                            <td class="px-6 py-5 text-neutral-muted text-sm leading-relaxed">A fact or situation that is
+                                observed to exist or happen, especially one whose cause is in question.</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-2"><span
+                                        class="size-2 rounded-full bg-amber-400"></span><span
+                                        class="text-xs font-bold text-amber-600 uppercase">In Progress</span></div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-primary/[0.02] transition-colors">
+                            <td class="px-6 py-5 text-center text-neutral-muted text-sm font-medium">9</td>
+                            <td class="px-6 py-5 font-bold text-neutral-dark dark:text-white">Thesis</td>
+                            <td class="px-6 py-5 text-neutral-muted text-sm leading-relaxed">A statement or theory that
+                                is put forward as a premise to be maintained or proved.</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-2"><span
+                                        class="size-2 rounded-full bg-slate-300 dark:bg-slate-600"></span><span
+                                        class="text-xs font-bold text-neutral-muted uppercase">Not Started</span></div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-primary/[0.02] transition-colors">
+                            <td class="px-6 py-5 text-center text-neutral-muted text-sm font-medium">10</td>
+                            <td class="px-6 py-5 font-bold text-neutral-dark dark:text-white">Inference</td>
+                            <td class="px-6 py-5 text-neutral-muted text-sm leading-relaxed">A conclusion reached on the
+                                basis of evidence and reasoning.</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-2"><span
+                                        class="size-2 rounded-full bg-amber-400"></span><span
+                                        class="text-xs font-bold text-amber-600 uppercase">In Progress</span></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="p-6 border-t border-primary/5 flex items-center justify-between">
+                <p class="text-sm font-medium text-neutral-muted">Page 1 of 12</p>
+                <div class="flex items-center gap-2">
+                    <button
+                        class="size-10 rounded-xl border border-primary/10 flex items-center justify-center hover:bg-background-light dark:hover:bg-slate-800 disabled:opacity-50 transition-colors"
+                        disabled="">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button
+                        class="size-10 rounded-xl border border-primary/10 flex items-center justify-center hover:bg-background-light dark:hover:bg-slate-800 transition-colors">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-20 border-t border-primary/5 bg-white dark:bg-background-dark py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="size-8 bg-primary/10 rounded-lg flex items-center justify-center text-primary"><span
+                            class="material-symbols-outlined text-xl">auto_stories</span></div>
+                    <h4 class="text-lg font-bold tracking-tight text-neutral-dark dark:text-white">LinguaFlash</h4>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a class="text-neutral-muted text-sm font-medium hover:text-primary transition-colors"
+                        href="#">About</a>
+                    <a class="text-neutral-muted text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Privacy</a>
+                    <a class="text-neutral-muted text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Terms</a>
+                    <a class="text-neutral-muted text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Contact</a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-primary/5 text-center">
+                <p class="text-neutral-muted text-sm">© 2024 LinguaFlash. Built for academic excellence.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

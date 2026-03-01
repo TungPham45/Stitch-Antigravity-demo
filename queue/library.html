@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>LinguaFlash - My Library</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2020ee",
+                        "primary-dark": "#1e1eae",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101022",
+                        "onyx": "#111118",
+                        "slate-muted": "#616189",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px) scale(1.02);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .card-hover {
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-onyx dark:text-slate-100 font-display">
+    <header
+        class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-primary text-white p-2 rounded-lg">
+                    <span class="material-symbols-outlined block">auto_stories</span>
+                </div>
+                <a href="index.html"
+                    class="text-2xl font-black tracking-tight text-onyx dark:text-white leading-none">LinguaFlash</a>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-slate-muted hover:text-primary font-medium transition-colors"
+                    href="index.html">Explore</a>
+                <a class="text-slate-muted hover:text-primary font-medium transition-colors" href="study.html">Study
+                    Modes</a>
+                <a class="text-primary font-bold border-b-2 border-primary pb-1" href="library.html">Library</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="p-2 text-slate-muted hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+                    <span class="material-symbols-outlined">notifications</span>
+                </button>
+                <div
+                    class="h-10 w-10 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center overflow-hidden">
+                    <span class="material-symbols-outlined text-primary">person</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 py-10">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
+            <div>
+                <h2 class="text-4xl font-black text-onyx dark:text-white tracking-tight">My Library</h2>
+                <p class="text-slate-muted mt-1">Manage and track your vocabulary sets</p>
+            </div>
+            <a href="create.html"
+                class="bg-primary text-white font-bold px-8 py-3 rounded-full flex items-center gap-2 hover:bg-primary-dark transition-all shadow-lg shadow-primary/20 w-fit">
+                <span class="material-symbols-outlined">add_circle</span>
+                Create New Set
+            </a>
+        </div>
+        <div class="flex flex-col gap-6 mb-12">
+            <div class="relative w-full max-w-2xl">
+                <span
+                    class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-muted">search</span>
+                <input
+                    class="w-full bg-white dark:bg-background-dark border-none ring-1 ring-slate-200 dark:ring-slate-800 focus:ring-2 focus:ring-primary rounded-xl pl-12 pr-4 py-4 text-base shadow-sm"
+                    placeholder="Search your sets..." type="text" />
+            </div>
+            <div class="flex items-center gap-2 overflow-x-auto pb-2">
+                <button
+                    class="px-6 py-2 bg-primary text-white font-bold rounded-full transition-colors whitespace-nowrap">All
+                    Sets</button>
+                <button
+                    class="px-6 py-2 bg-white dark:bg-background-dark text-slate-muted hover:text-primary font-medium rounded-full ring-1 ring-slate-200 dark:ring-slate-800 transition-colors whitespace-nowrap">Recent</button>
+                <button
+                    class="px-6 py-2 bg-white dark:bg-background-dark text-slate-muted hover:text-primary font-medium rounded-full ring-1 ring-slate-200 dark:ring-slate-800 transition-colors whitespace-nowrap">Favorites</button>
+                <button
+                    class="px-6 py-2 bg-white dark:bg-background-dark text-slate-muted hover:text-primary font-medium rounded-full ring-1 ring-slate-200 dark:ring-slate-800 transition-colors whitespace-nowrap">Shared
+                    with me</button>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Academic Writing -->
+            <div
+                class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 card-hover flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-primary/10 text-primary p-3 rounded-xl">
+                        <span class="material-symbols-outlined">edit_note</span>
+                    </div>
+                    <button class="text-slate-muted hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </button>
+                </div>
+                <h3 class="text-xl font-bold text-onyx dark:text-white mb-1">Academic Writing</h3>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-sm font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-md">120
+                        cards</span>
+                    <span class="text-sm text-slate-muted">Last studied: 2 days ago</span>
+                </div>
+                <div class="mt-auto">
+                    <div
+                        class="flex justify-between items-center text-xs font-bold text-slate-muted mb-2 uppercase tracking-wider">
+                        <span>Mastery Progress</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full mb-6 overflow-hidden">
+                        <div class="bg-primary h-full rounded-full" style="width: 65%;"></div>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="study.html"
+                            class="flex-1 bg-primary text-white font-bold py-3 rounded-xl hover:bg-primary-dark transition-colors text-sm text-center">Study
+                            Now</a>
+                        <a href="wordlist.html"
+                            class="flex-1 bg-slate-50 dark:bg-slate-800 text-slate-muted font-bold py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors text-sm border border-slate-200 dark:border-slate-700 text-center">View
+                            Words</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Business English -->
+            <div
+                class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 card-hover flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-emerald-500/10 text-emerald-600 p-3 rounded-xl">
+                        <span class="material-symbols-outlined">business_center</span>
+                    </div>
+                    <button class="text-slate-muted hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </button>
+                </div>
+                <h3 class="text-xl font-bold text-onyx dark:text-white mb-1">Business English</h3>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-sm font-semibold text-emerald-600 bg-emerald-500/10 px-2 py-0.5 rounded-md">85
+                        cards</span>
+                    <span class="text-sm text-slate-muted">Last studied: 5 hours ago</span>
+                </div>
+                <div class="mt-auto">
+                    <div
+                        class="flex justify-between items-center text-xs font-bold text-slate-muted mb-2 uppercase tracking-wider">
+                        <span>Mastery Progress</span>
+                        <span>82%</span>
+                    </div>
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full mb-6 overflow-hidden">
+                        <div class="bg-emerald-500 h-full rounded-full" style="width: 82%;"></div>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="study.html"
+                            class="flex-1 bg-primary text-white font-bold py-3 rounded-xl hover:bg-primary-dark transition-colors text-sm text-center">Study
+                            Now</a>
+                        <a href="wordlist.html"
+                            class="flex-1 bg-slate-50 dark:bg-slate-800 text-slate-muted font-bold py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors text-sm border border-slate-200 dark:border-slate-700 text-center">View
+                            Words</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: TOEFL Prep -->
+            <div
+                class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 card-hover flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-amber-500/10 text-amber-600 p-3 rounded-xl">
+                        <span class="material-symbols-outlined">school</span>
+                    </div>
+                    <button class="text-slate-muted hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </button>
+                </div>
+                <h3 class="text-xl font-bold text-onyx dark:text-white mb-1">TOEFL Prep</h3>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-sm font-semibold text-amber-600 bg-amber-500/10 px-2 py-0.5 rounded-md">200
+                        cards</span>
+                    <span class="text-sm text-slate-muted">Last studied: 1 day ago</span>
+                </div>
+                <div class="mt-auto">
+                    <div
+                        class="flex justify-between items-center text-xs font-bold text-slate-muted mb-2 uppercase tracking-wider">
+                        <span>Mastery Progress</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full mb-6 overflow-hidden">
+                        <div class="bg-amber-500 h-full rounded-full" style="width: 45%;"></div>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="study.html"
+                            class="flex-1 bg-primary text-white font-bold py-3 rounded-xl hover:bg-primary-dark transition-colors text-sm text-center">Study
+                            Now</a>
+                        <a href="wordlist.html"
+                            class="flex-1 bg-slate-50 dark:bg-slate-800 text-slate-muted font-bold py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors text-sm border border-slate-200 dark:border-slate-700 text-center">View
+                            Words</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4: Daily Conversation -->
+            <div
+                class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 card-hover flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-rose-500/10 text-rose-600 p-3 rounded-xl">
+                        <span class="material-symbols-outlined">chat_bubble</span>
+                    </div>
+                    <button class="text-slate-muted hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </button>
+                </div>
+                <h3 class="text-xl font-bold text-onyx dark:text-white mb-1">Daily Conversation</h3>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-sm font-semibold text-rose-600 bg-rose-500/10 px-2 py-0.5 rounded-md">150
+                        cards</span>
+                    <span class="text-sm text-slate-muted">Last studied: 3 days ago</span>
+                </div>
+                <div class="mt-auto">
+                    <div
+                        class="flex justify-between items-center text-xs font-bold text-slate-muted mb-2 uppercase tracking-wider">
+                        <span>Mastery Progress</span>
+                        <span>72%</span>
+                    </div>
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full mb-6 overflow-hidden">
+                        <div class="bg-rose-500 h-full rounded-full" style="width: 72%;"></div>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="study.html"
+                            class="flex-1 bg-primary text-white font-bold py-3 rounded-xl hover:bg-primary-dark transition-colors text-sm text-center">Study
+                            Now</a>
+                        <a href="wordlist.html"
+                            class="flex-1 bg-slate-50 dark:bg-slate-800 text-slate-muted font-bold py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors text-sm border border-slate-200 dark:border-slate-700 text-center">View
+                            Words</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5: Travel English -->
+            <div
+                class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 card-hover flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-sky-500/10 text-sky-600 p-3 rounded-xl">
+                        <span class="material-symbols-outlined">flight</span>
+                    </div>
+                    <button class="text-slate-muted hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </button>
+                </div>
+                <h3 class="text-xl font-bold text-onyx dark:text-white mb-1">Travel English</h3>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-sm font-semibold text-sky-600 bg-sky-500/10 px-2 py-0.5 rounded-md">90
+                        cards</span>
+                    <span class="text-sm text-slate-muted">Last studied: 1 week ago</span>
+                </div>
+                <div class="mt-auto">
+                    <div
+                        class="flex justify-between items-center text-xs font-bold text-slate-muted mb-2 uppercase tracking-wider">
+                        <span>Mastery Progress</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full mb-6 overflow-hidden">
+                        <div class="bg-sky-500 h-full rounded-full" style="width: 30%;"></div>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="study.html"
+                            class="flex-1 bg-primary text-white font-bold py-3 rounded-xl hover:bg-primary-dark transition-colors text-sm text-center">Study
+                            Now</a>
+                        <a href="wordlist.html"
+                            class="flex-1 bg-slate-50 dark:bg-slate-800 text-slate-muted font-bold py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors text-sm border border-slate-200 dark:border-slate-700 text-center">View
+                            Words</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6: Medical Terms -->
+            <div
+                class="bg-white dark:bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 card-hover flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-violet-500/10 text-violet-600 p-3 rounded-xl">
+                        <span class="material-symbols-outlined">health_and_safety</span>
+                    </div>
+                    <button class="text-slate-muted hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </button>
+                </div>
+                <h3 class="text-xl font-bold text-onyx dark:text-white mb-1">Medical Terms</h3>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-sm font-semibold text-violet-600 bg-violet-500/10 px-2 py-0.5 rounded-md">180
+                        cards</span>
+                    <span class="text-sm text-slate-muted">Last studied: 4 days ago</span>
+                </div>
+                <div class="mt-auto">
+                    <div
+                        class="flex justify-between items-center text-xs font-bold text-slate-muted mb-2 uppercase tracking-wider">
+                        <span>Mastery Progress</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full mb-6 overflow-hidden">
+                        <div class="bg-violet-500 h-full rounded-full" style="width: 55%;"></div>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="study.html"
+                            class="flex-1 bg-primary text-white font-bold py-3 rounded-xl hover:bg-primary-dark transition-colors text-sm text-center">Study
+                            Now</a>
+                        <a href="wordlist.html"
+                            class="flex-1 bg-slate-50 dark:bg-slate-800 text-slate-muted font-bold py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors text-sm border border-slate-200 dark:border-slate-700 text-center">View
+                            Words</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-white dark:bg-background-dark border-t border-primary/5 px-6 md:px-20 lg:px-40 py-12">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center justify-center size-8 bg-primary/10 rounded-lg text-primary">
+                        <span class="material-symbols-outlined text-xl">style</span>
+                    </div>
+                    <h2 class="text-onyx dark:text-white text-lg font-bold">LinguaFlash</h2>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a class="text-slate-muted dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">About</a>
+                    <a class="text-slate-muted dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Privacy</a>
+                    <a class="text-slate-muted dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Terms</a>
+                    <a class="text-slate-muted dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Contact</a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-primary/5 text-center">
+                <p class="text-slate-muted dark:text-slate-500 text-sm">
+                    © 2024 LinguaFlash. Built for academic excellence.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
