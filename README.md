@@ -44,13 +44,11 @@ A complete 5-page English learning flashcard website called **LinguaFlash**, bui
 - Action buttons: Don't Know, Somewhat, Know It!
 - Session stats, Shuffle/Auto-play/End Session controls
 
-````carousel
 <img width="824" height="389" alt="image" src="https://github.com/user-attachments/assets/d4980747-0256-4a8c-a5c9-5f11b53acc88" />
 
 
 <img width="823" height="393" alt="image" src="https://github.com/user-attachments/assets/04277ee0-23e4-4601-a5e7-eb8b56fc77bf" />
 
-````
 
 ## Design System
 | Token | Value |
