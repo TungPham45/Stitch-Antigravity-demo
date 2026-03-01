@@ -36,8 +36,8 @@ A complete 5-page English learning flashcard website called **LinguaFlash**, bui
 - Mastery indicators (Mastered, In Progress, Not Started)
 - Pagination (Page 1 of 12)
 
-![Word List Page](<img width="827" height="392" alt="image" src="https://github.com/user-attachments/assets/1d3971df-a138-4d29-b4d6-0bdedcc69181" />
-)
+<img width="827" height="392" alt="image" src="https://github.com/user-attachments/assets/1d3971df-a138-4d29-b4d6-0bdedcc69181" />
+
 
 ### 5. Study Mode ([study.html](file:///C:/Users/admin/Desktop/Stich+Gemini/site/public/study.html))
 - Interactive 3D card flip animation (click to reveal definition)
@@ -45,11 +45,10 @@ A complete 5-page English learning flashcard website called **LinguaFlash**, bui
 - Session stats, Shuffle/Auto-play/End Session controls
 
 ````carousel
-![Study - Front](<img width="824" height="389" alt="image" src="https://github.com/user-attachments/assets/d4980747-0256-4a8c-a5c9-5f11b53acc88" />
-)
+<img width="824" height="389" alt="image" src="https://github.com/user-attachments/assets/d4980747-0256-4a8c-a5c9-5f11b53acc88" />
 <!-- slide -->
-![Study - Back (Flipped)](<img width="823" height="393" alt="image" src="https://github.com/user-attachments/assets/04277ee0-23e4-4601-a5e7-eb8b56fc77bf" />
-)
+<img width="823" height="393" alt="image" src="https://github.com/user-attachments/assets/04277ee0-23e4-4601-a5e7-eb8b56fc77bf" />
+
 ````
 
 ## Design System
